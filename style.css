@@ -1,9 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     display: grid;
     height: 100%;
     width: 100%;
     place-items: center;
-    background: #fff;
+    background: linear-gradient(#5d9cec, #445463);
+    overflow: hidden;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin: 10px;
 }
 
 .wrapper {
@@ -106,4 +122,22 @@ body {
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip:before{
     background: #333;
+}
+
+@media (max-width: 500px){
+    h1 {
+        font-size: 20px;
+    }
+
+    
+
+
+    .wrapper {
+        display: block;
+    }
+
+    .wrapper .icon {
+        margin: auto;
+        padding: 20px;
+    }
 }
